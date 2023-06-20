@@ -1,0 +1,15 @@
+.homeHero {
+    padding: 16px;
+    height: 25vh;
+    min-height: 200px;
+}
+
+.heroForm input {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 14px;
+    max-width: 420px;
+    border-radius: 4px;
+    border: transparent;
+    background-color: #fff;
+}

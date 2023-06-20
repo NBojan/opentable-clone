@@ -1,0 +1,136 @@
+.restHero {
+    padding: 16px;
+    height: 30vh;
+    min-height: 200px;
+}
+.restLayout {
+    margin-top: -32px;
+}
+.restSection {
+    flex: 1;
+    padding: 0 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid var(--clr-grey-8);
+}
+
+.restImages img {
+    height: 175px;
+    flex-basis: 32%;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 16px;
+}
+
+.review .circle {
+    display: flex;
+    width: 70px;
+    height: 70px;
+    color: #fff;
+    font-size: 24px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--clr-primary-5);
+}
+
+.barContainer {
+    width: 280px;
+}
+.bar {
+    position: fixed;
+    width: 280px;
+    padding: 16px;
+    border-radius: 4px;
+    background-color: #fff;
+    border: 1px solid var(--clr-grey-8);
+}
+.formControl input,
+.formControl select {
+    width: 100%;
+    padding: 8px;
+    font-size: 15px;
+    border-radius: 4px;
+    background-color: #fff;
+    transition: all .2s ease;
+    border: 1px solid transparent;
+}
+.formControl input:hover,
+.formControl select:hover {
+    border: 1px solid var(--clr-grey-8);
+}
+.barFlex .formControl {
+    flex-basis: 48%;
+}
+
+.menuItem {
+    flex-basis: 49%;
+    padding: 16px 12px;
+    margin-bottom: 24px;
+}
+
+.timesCont a,
+.timesCont button {
+    flex-basis: 32%;
+    padding: 4px;
+	font-size: 14px;
+    margin-bottom: 8px;
+	letter-spacing: 1px;
+}
+
+.loading {
+	width: 1rem;
+	height: 1rem;
+    margin: 0 auto;
+	border-radius: 50%;
+	border: 3px solid var(--clr-primary-1);
+	border-top-color: var(--clr-primary-5);
+	animation: spinner 0.6s linear infinite;
+}
+@keyframes spinner {
+	to {
+	  transform: rotate(360deg);
+	}
+}
+
+
+@media (max-width: 1199px){
+    .restImages img {
+        flex-basis: 48%;
+    }
+}
+@media (max-width: 991px){
+    .restBody {
+        flex-direction: column;
+    }
+    .restSection {
+        margin-bottom: 32px;
+        margin-right: 0px;
+    }
+    .bar {
+        position: static;
+    }
+}
+@media (max-width: 767px){
+    .menuItem {
+        flex-basis: 100%;
+    }    
+}
+@media (max-width: 575px){
+    .review {
+        flex-direction: column;
+    }
+    .circleCont {
+        margin-bottom: 12px;
+        margin-right: 0;
+    }
+    .restImages img {
+        flex-basis: 100%;
+    }
+}
+@media (max-width: 420px){
+    .barContainer,
+    .bar {
+        width: 220px;
+    }
+}

@@ -1,0 +1,60 @@
+.reserveCard img {
+    display: block;
+    width: 150px;
+    height: 120px;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-right: 24px;
+}
+
+.reserveForm {
+    margin-bottom: 24px;
+    max-width: 600px;
+}
+.reserveForm input {
+    padding: 12px;
+    flex-basis: 48%;
+    font-size: 16px;
+    border-radius: 4px;
+    margin-bottom: 16px;
+    border: 1px solid var(--clr-grey-8);
+}
+.reserveForm input::placeholder {
+    color: var(--clr-grey-3);
+}
+.reserveForm button:disabled {
+    cursor: not-allowed;
+    border-color: var(--clr-grey-8);
+    background-color: var(--clr-grey-8);
+}
+
+.loading {
+	width: 1rem;
+	height: 1rem;
+    margin: 0 auto;
+	border-radius: 50%;
+	border: 3px solid var(--clr-primary-1);
+	border-top-color: var(--clr-primary-5);
+	animation: spinner 0.6s linear infinite;
+}
+@keyframes spinner {
+	to {
+	  transform: rotate(360deg);
+	}
+}
+
+@media (max-width: 767px){
+
+}
+@media (max-width: 575px){
+    .reserveCard {
+        flex-direction: column;
+    }
+    .reserveCard img {
+        margin-right: 0;
+        margin-bottom: 8px;
+    }
+	.reserveForm input {
+        flex-basis: 100%;
+    }
+}

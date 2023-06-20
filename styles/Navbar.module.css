@@ -1,0 +1,43 @@
+.navSection {
+    height: 4rem;
+    padding: 8px;
+    background-color: #fff;
+}
+.navSection nav {
+    height: 100%;
+}
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 8px;
+    color: var(--clr-black); 
+}
+
+
+@media (max-width: 360px){
+    .logo {
+        font-size: 18px;
+    }
+    .navSection button {
+        padding: 4px 8px;
+        font-size: 10px;
+        letter-spacing: 1px;
+    }
+    .name {
+        font-size: 12px;
+    }
+}
+
+.loading {
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	border: 3px solid #ccc;
+	border-top-color: var(--clr-primary-5);
+	animation: spinner 0.6s linear infinite;
+}
+@keyframes spinner {
+	to {
+	  transform: rotate(360deg);
+	}
+}
