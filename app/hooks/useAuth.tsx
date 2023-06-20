@@ -1,7 +1,8 @@
 import axios from "axios";
-import { useState } from "react";
-import { useGlobalContext } from "../context/context";
 import { removeCookies } from "cookies-next";
+import { useGlobalContext } from "../context/context";
+
+const url = "https://opentable-clone-seven.vercel.app/api/auth/"
 
 const useAuth = () => {
     const { setAuthState, setOpen } = useGlobalContext();
@@ -10,7 +11,7 @@ const useAuth = () => {
     const signInFunc = async (inputs: {email:string, password:string}) => {
         setAuthState({data: null, error: null, loading: true})
 
-        const response = await axios.post("http://localhost:3000/api/auth/signin", inputs)
+        const response = await axios.post(`${url}signin`, inputs)
         .catch(err => setAuthState({data: null, error: err.response.data.errMsg, loading: false}));
 
         if(response) {
@@ -31,7 +32,7 @@ const useAuth = () => {
       setAuthState({ data: null, error: null, loading: true });
 
       const response = await axios
-        .post("http://localhost:3000/api/auth/signup", inputs)
+        .post(`${url}signup`, inputs)
         .catch((err) =>
           setAuthState({ data: null, error: err.response.data.errMsg, loading: false })
         );
