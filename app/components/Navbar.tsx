@@ -1,9 +1,9 @@
 "use client";
 
 import Link from "next/link";
+import useAuth from "../hooks/useAuth";
 import styles from "../../styles/Navbar.module.css";
 import { useGlobalContext } from "../context/context";
-import useAuth from "../hooks/useAuth";
 
 const Navbar = () => {
   const { signOutFunc } = useAuth();

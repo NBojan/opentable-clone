@@ -30,7 +30,7 @@ export const AppProvider = ({ children }) => {
 
     if(!jwt) return setAuthState({data: null, error: null, loading: false});
     
-    const response = await axios("https://opentable-clone-seven.vercel.app/api/auth/me", {
+    const response = await axios("https://opentable-clone-nbojan.vercel.app/api/auth/me", {
       headers: {
         Authorization: `Bearer ${jwt}`
       }

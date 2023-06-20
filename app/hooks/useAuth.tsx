@@ -2,7 +2,7 @@ import axios from "axios";
 import { removeCookies } from "cookies-next";
 import { useGlobalContext } from "../context/context";
 
-const url = "https://opentable-clone-seven.vercel.app/api/auth/"
+const url = "https://opentable-clone-nbojan.vercel.app//api/auth/"
 
 const useAuth = () => {
     const { setAuthState, setOpen } = useGlobalContext();

@@ -2,7 +2,7 @@ import axios from "axios";
 import { useState } from "react";
 
 
-const url = "https://opentable-clone-seven.vercel.app/api/restaurant/";
+const url = "https://opentable-clone-nbojan.vercel.app/api/restaurant/";
 
 const useAvailability = () => {
     const [data, setData] = useState<{time:string, available:boolean, day:string, partySize:string}[] | null>(null);

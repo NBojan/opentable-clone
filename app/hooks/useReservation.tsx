@@ -1,7 +1,7 @@
 import axios from "axios";
 import { useState } from "react";
 
-const url = "https://opentable-clone-seven.vercel.app/api/restaurant/";
+const url = "https://opentable-clone-nbojan.vercel.app/api/restaurant/";
 
 const useReservation = () => {
   const [data, setData] = useState(null);
