@@ -22,7 +22,7 @@ const Navbar = () => {
           <div className="d-flex align-center">
             {data ? (
               <>
-                <p className={`mr-8 ${styles.name}`}>
+                <p className={`mr-8 ${styles.name} capitalize`}>
                   {data.firstName} {data.lastName.slice(0, 1)}.
                 </p>
                 <button
